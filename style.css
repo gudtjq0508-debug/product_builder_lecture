@@ -5,6 +5,8 @@
   --btn-text: #000000;
   --number-bg: #f0f0f0;
   --number-text: #000000;
+  --input-bg: #ffffff;
+  --input-border: #cccccc;
 }
 
 body.dark-mode {
@@ -14,6 +16,8 @@ body.dark-mode {
   --btn-text: #ffffff;
   --number-bg: #333333;
   --number-text: #ffffff;
+  --input-bg: #1e1e1e;
+  --input-border: #444444;
 }
 
 body {
@@ -63,4 +67,59 @@ body {
   margin: 0 5px;
   font-size: 20px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+#partnership-section {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+#partnership-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+
+#submit-btn:hover {
+  opacity: 0.8;
 }
